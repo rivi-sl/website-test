@@ -11,8 +11,12 @@ title2 = document.getElementById("r-se2-title");
 icon2 = document.getElementsByClassName("r-se2-icon");
 card2t = document.getElementsByClassName("r-se2-card-t");
 title3 = document.getElementById("r-se3-title");
-cards3 = document.getElementById("r-se3-cards");
-collect3 = document.getElementById("r-se3-collect");
+subtitle3card1 = document.getElementById("r-se3-subtitle-card-1");
+subtitle3card2 = document.getElementById("r-se3-subtitle-card-2");
+subtitle3card3 = document.getElementById("r-se3-subtitle-card-3");
+title4 = document.getElementById("r-se4-title");
+cards4 = document.getElementById("r-se4-cards");
+collect4 = document.getElementById("r-se4-collect");
 
 window.onload = function () {
     // if(document.body.scrollTop < 650 || document.documentElement.scrollTop < 650){
@@ -94,25 +98,38 @@ function scrollFunction() {
             card2t[i].style.fontSize = "1.5rem";
         }
     }
-
-    // Section 3
-    if ((document.body.scrollTop > 1100 && document.body.scrollTop < 1370) 
-        || (document.documentElement.scrollTop > 1100 && document.documentElement.scrollTop < 1370)){
+    //section3
+    if ((document.body.scrollTop > 1200 && document.body.scrollTop < 1500) 
+        || (document.documentElement.scrollTop > 1200 && document.documentElement.scrollTop < 1500)){
             title3.style.fontSize = "4rem";
-            document.body.style.backgroundColor = "black";
-            cards3.style.height = "70vh";
-            cards3.style.opacity = "1";
-            cards3.style.visibility = "visible";
-            collect3.style.color = "white";
-            collect3.style.fontSize = "2rem";
+            subtitle3card1.style.fontSize = "3rem";
+            subtitle3card2.style.fontSize = "3rem";
+            subtitle3card3.style.fontSize = "3rem";
     }else{
-        title3.style.fontSize = "2rem";
+            title3.style.fontSize = "2rem";
+            subtitle3card1.style.fontSize = "1.5rem";
+            subtitle3card2.style.fontSize = "1.5rem";
+            subtitle3card3.style.fontSize = "1.5rem";
+    }
+
+    // Section 4
+    if ((document.body.scrollTop > 1600 && document.body.scrollTop < 1970) 
+        || (document.documentElement.scrollTop > 1600 && document.documentElement.scrollTop < 1970)){
+            title4.style.fontSize = "4rem";
+            document.body.style.backgroundColor = "black";
+            cards4.style.height = "70vh";
+            cards4.style.opacity = "1";
+            cards4.style.visibility = "visible";
+            collect4.style.color = "white";
+            collect4.style.fontSize = "2rem";
+    }else{
+        title4.style.fontSize = "2rem";
         document.body.style.backgroundColor = "white";
-        cards3.style.height = "60vh";
-        cards3.style.opacity = "0";
-        cards3.style.visibility = "hidden";
-        collect3.style.color = "black";
-        collect3.style.fontSize = "1.5rem";
+        cards4.style.height = "60vh";
+        cards4.style.opacity = "0";
+        cards4.style.visibility = "hidden";
+        collect4.style.color = "black";
+        collect4.style.fontSize = "1.5rem";
     }
 }
 

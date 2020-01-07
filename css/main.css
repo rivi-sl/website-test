@@ -148,21 +148,42 @@ body {
     transition: 0.5s;
 }
 
-/* Section 3 */
-.r-section3 {
+/*section 3*/
+.r-section3 div.card{
+    padding-top: 10px;
+}
+
+.r-se3-title{
+    transition: 0.5s; 
+}
+
+.r-section3 h5.card-title{
+    transition: 0.5s; 
+}
+
+.r-section3 p.card-text{
+    font-size: 18px;
+}
+
+.r-section3 div.card{
+    margin: 5px;
+}
+
+/* Section 4 */
+.r-section4 {
     padding-top: 100px;
 }
 
-.r-se3-title {
+.r-se4-title {
     transition: 0.5s;
 }
 
-.r-se3-cards {
+.r-se4-cards {
     height: 70vh;
     overflow: hidden;
 }
 
-.r-se3-collect {
+.r-se4-collect {
     text-align: center;
     /* Starting position */
     -moz-transform: translateY(110%);
@@ -213,15 +234,15 @@ body {
     }
 }
 
-.r-se3-card {
+.r-se4-card {
     background-color: transparent;
     border: 0px;
 }
 
-.r-se3-card div.card-body {
+.r-se4-card div.card-body {
     padding: 0px;
 }
 
-.r-se3-card-t {
+.r-se4-card-t {
     font-size: 100%;
 }
