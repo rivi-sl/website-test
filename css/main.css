@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bebas+Neue&display=swap');
+
+/* 
+Colors in the logo
+#BF0005 DarkRed
+#FF0000 Red
+#E97B00 Orange 
+*/
+
+.font-s{
+    font-family: 'Abhaya Libre', serif;
+}
+
+.font-1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.r-header{
+    padding: 30px 80px;
+    transition: 0.5s; 
+}
+
+.r-nav-brand{
+    font-size: 180%;
+}
+
+.r-section0{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(135deg,#434343, #000000);
+    clip-path: ellipse(90% 65% at 30% 28%);
+}
+
+.r-logo0{
+    position: fixed;
+    left: 30%;
+    bottom: 22%;
+    width: 30%;
+    z-index: 200;
+    transition: 0.5s; 
+}
+
+.r-mimg0{
+    position: absolute;
+    right: 4%;
+    bottom: 10%;
+    width: 30%;
+    z-index: 100;
+}
+
+.r-mcaption0{
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    left: 40%;
+}
