@@ -21,7 +21,8 @@ Colors in the logo
 }
 
 .r-nav-brand{
-    font-size: 180%;
+    font-size: 280%;
+    transition: 0.2s; 
 }
 
 .r-section0{
@@ -29,6 +30,7 @@ Colors in the logo
     height: 600px;
     background-image: linear-gradient(135deg,#434343, #000000);
     clip-path: ellipse(90% 65% at 30% 28%);
+    transition: 0.5s; 
 }
 
 .r-logo0{
@@ -52,5 +54,7 @@ Colors in the logo
     position: absolute;
     text-align: center;
     bottom: 15%;
-    left: 40%;
+    left: 35%;
+    font-size: 130%;
+    transition: 0.2s; 
 }
