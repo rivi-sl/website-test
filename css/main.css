@@ -7,54 +7,56 @@ Colors in the logo
 #E97B00 Orange 
 */
 
-.font-s{
+.font-s {
     font-family: 'Abhaya Libre', serif;
 }
 
-.font-1{
+.font-1 {
     font-family: 'Bebas Neue', cursive;
 }
 
-body{
-    transition: background-color 1s; 
+body {
+    transition: background-color 1s;
 }
 
-.r-header{
+/* Header */
+.r-header {
     padding: 30px 80px;
-    transition: 0.5s; 
+    transition: 0.5s;
     font-size: 120%;
 }
 
-.r-nav-brand{
+.r-nav-brand {
     font-size: 280%;
-    transition: 0.2s; 
+    transition: 0.2s;
 }
 
-.r-section0{
+/* Head section */
+.r-section0 {
     width: 100%;
     height: 600px;
-    background-image: linear-gradient(135deg,#434343, #000000);
+    background-image: linear-gradient(135deg, #434343, #000000);
     clip-path: ellipse(90% 65% at 30% 28%);
-    transition: 0.5s; 
+    transition: 0.5s;
 }
 
-.r-logo0{
+.r-se0-logo {
     position: fixed;
     left: 30%;
     bottom: 22%;
     width: 30%;
     z-index: 200;
     transition: background-color 0.2s,
-                width 0.5s,
-                left 0.5s,
-                bottom 0.5s,
-                padding 0.5s,
-                border 0.5s,
-                border-radius 0.5s; 
+        width 0.5s,
+        left 0.5s,
+        bottom 0.5s,
+        padding 0.5s,
+        border 0.5s,
+        border-radius 0.5s;
 
 }
 
-.r-mimg0{
+.r-se0-mimg {
     position: absolute;
     right: 4%;
     bottom: 10%;
@@ -62,34 +64,35 @@ body{
     z-index: 100;
 }
 
-.r-mcaption0{
+.r-se0-mcaption {
     position: absolute;
     text-align: center;
     bottom: 15%;
     left: 35%;
-    font-size: 130%;
-    transition: 0.2s; 
+    font-size: 110%;
+    transition: 0.2s;
 }
 
-.r-section1{
+/* Section 1 */
+.r-section1 {
     padding-top: 100px;
 }
 
-.r-title0{
-    transition: 0.5s; 
+.r-se1-title {
+    transition: 0.5s;
 }
 
-.r-section1.card{
-    transition: 0.3s; 
+.r-section1.card {
+    transition: 0.3s;
 }
 
-.r-quote0{
+.r-se1-quote {
     font-size: 100%;
     padding: 20px 100px;
-    transition: 0.5s; 
+    transition: 0.5s;
 }
 
-.r-quote0::before{
+.r-se1-quote::before {
     content: open-quote;
     position: absolute;
     font-size: 300%;
@@ -97,7 +100,7 @@ body{
     top: 0;
 }
 
-.r-quote0::after{
+.r-se1-quote::after {
     content: close-quote;
     position: absolute;
     font-size: 200%;
@@ -106,37 +109,39 @@ body{
     bottom: 0;
 }
 
-.r-quote0-text{
+.r-se1-quote-t {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    transition: 0.5s; 
+    transition: 0.5s;
 }
 
-.r-quote0-text span{
+.r-se1-quote-t span {
     font-size: 200%;
 }
 
 /* Section 2 */
-.r-section2{
+.r-section2 {
     padding-top: 100px;
 }
 
-.r-icon2{
+.r-se2-title {
+    transition: 0.5s;
+}
+
+.r-se2-icon {
     font-size: 2rem;
-    transition: 0.5s; 
+    transition: 0.5s;
 }
 
-.r-title2{
-    transition: 0.5s; 
-}
-
-.r-cardt2{
+.r-se2-card-t {
     display: inline;
 }
 
-.r-card-2b-1, .r-card-2b-2, .r-card-2b-3{
+.r-se2-card-b1,
+.r-se2-card-b2,
+.r-se2-card-b3 {
     margin-top: 10px;
     visibility: hidden;
     opacity: 0;
@@ -144,18 +149,79 @@ body{
 }
 
 /* Section 3 */
-.r-section3{
+.r-section3 {
     padding-top: 100px;
 }
 
-.r-se3-card{
+.r-se3-title {
+    transition: 0.5s;
+}
+
+.r-se3-cards {
+    height: 70vh;
+    overflow: hidden;
+}
+
+.r-se3-collect {
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateY(110%);
+    -webkit-transform: translateY(110%);
+    transform: translateY(110%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-up 20s linear infinite;
+    -webkit-animation: scroll-up 20s linear infinite;
+    animation: scroll-up 20s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(110%);
+    }
+
+    100% {
+        -moz-transform: translateY(-110%);
+    }
+}
+
+@-webkit-keyframes scroll-up {
+    0% {
+        -webkit-transform: translateY(110%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-110%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(110%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(110%);
+        /* Browser bug fix */
+        transform: translateY(110%);
+    }
+
+    100% {
+        -moz-transform: translateY(-110%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-110%);
+        /* Browser bug fix */
+        transform: translateY(-110%);
+    }
+}
+
+.r-se3-card {
+    background-color: transparent;
     border: 0px;
 }
 
-.r-se3-card div.card-body{
+.r-se3-card div.card-body {
     padding: 0px;
 }
 
-.r-se3-cardt{
+.r-se3-card-t {
     font-size: 100%;
 }

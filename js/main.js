@@ -1,15 +1,18 @@
 header = document.getElementById("r-header");
 navbrand = document.getElementById("r-nav-brand");
-logo0 = document.getElementById("r-logo0");
 section0 = document.getElementById("r-section0");
-mcaption0 = document.getElementById("r-mcaption0");
+logo0 = document.getElementById("r-se0-logo");
+mcaption0 = document.getElementById("r-se0-mcaption");
 section1 = document.getElementById("r-section1");
-title0 = document.getElementById("r-title0");
-quote0 = document.getElementById("r-quote0");
-quote0text = document.getElementById("r-quote0-text");
-title2 = document.getElementById("r-title2");
-icon2 = document.getElementsByClassName("r-icon2");
-cardt2 = document.getElementsByClassName("r-cardt2");
+title1 = document.getElementById("r-se1-title");
+quote1 = document.getElementById("r-se1-quote");
+quote1t = document.getElementById("r-se1-quote-t");
+title2 = document.getElementById("r-se2-title");
+icon2 = document.getElementsByClassName("r-se2-icon");
+card2t = document.getElementsByClassName("r-se2-card-t");
+title3 = document.getElementById("r-se3-title");
+cards3 = document.getElementById("r-se3-cards");
+collect3 = document.getElementById("r-se3-collect");
 
 window.onload = function () {
     // if(document.body.scrollTop < 650 || document.documentElement.scrollTop < 650){
@@ -20,16 +23,11 @@ window.onload = function () {
     // }
 };
 window.onscroll = function () {
-    // if(document.body.scrollTop < 650 || document.documentElement.scrollTop < 650){
         scrollFunction();
-    // }
-    // else if(document.body.scrollTop < 1250 || document.documentElement.scrollTop > 1250){
-    //     scrollFunction_65();
-    // }
 };
 
 function scrollFunction() {
-
+    // Head Section
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.style.backgroundColor = "#BF0005";
         header.style.paddingTop = "10px";
@@ -54,6 +52,7 @@ function scrollFunction() {
         mcaption0.style.left = "35%";
     }
     
+    // Section 1
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         logo0.style.backgroundColor = "#000";
         logo0.style.borderRadius = "10%";
@@ -67,32 +66,53 @@ function scrollFunction() {
 
     if ((document.body.scrollTop > 350 && document.body.scrollTop < 620) 
         || (document.documentElement.scrollTop > 350 && document.documentElement.scrollTop < 620)){
-            title0.style.fontSize = "4rem";
-            quote0.style.fontSize = "150%";
-            quote0text.style.whiteSpace = "normal";
+            title1.style.fontSize = "4rem";
+            quote1.style.fontSize = "150%";
+            quote1t.style.whiteSpace = "normal";
             section1.style.paddingBottom = "0px";
     }else{
-        title0.style.fontSize = "2rem";
-        quote0.style.fontSize = "100%";
-        quote0text.style.whiteSpace = "nowrap";
+        title1.style.fontSize = "2rem";
+        quote1.style.fontSize = "100%";
+        quote1t.style.whiteSpace = "nowrap";
         section1.style.paddingBottom = "100px";
     }
     
-    if ((document.body.scrollTop > 650 && document.body.scrollTop < 950) 
+    // Section 2
+    if ((document.body.scrollTop > 750 && document.body.scrollTop < 950) 
         || (document.documentElement.scrollTop > 650 && document.documentElement.scrollTop < 950)){
             title2.style.fontSize = "4rem";
             for(var i = 0; i < 3; i++) {
                 icon2[i].style.fontSize = "4rem";
                 icon2[i].style.display = "block";
-                cardt2[i].style.fontSize = "2rem";
+                card2t[i].style.fontSize = "2rem";
             }
     }else{
         title2.style.fontSize = "2rem";
         for(var i = 0; i < 3; i++) {
             icon2[i].style.fontSize = "2rem";
             icon2[i].style.display = "inline";
-            cardt2[i].style.fontSize = "1.5rem";
+            card2t[i].style.fontSize = "1.5rem";
         }
+    }
+
+    // Section 3
+    if ((document.body.scrollTop > 1100 && document.body.scrollTop < 1370) 
+        || (document.documentElement.scrollTop > 1100 && document.documentElement.scrollTop < 1370)){
+            title3.style.fontSize = "4rem";
+            document.body.style.backgroundColor = "black";
+            cards3.style.height = "70vh";
+            cards3.style.opacity = "1";
+            cards3.style.visibility = "visible";
+            collect3.style.color = "white";
+            collect3.style.fontSize = "2rem";
+    }else{
+        title3.style.fontSize = "2rem";
+        document.body.style.backgroundColor = "white";
+        cards3.style.height = "60vh";
+        cards3.style.opacity = "0";
+        cards3.style.visibility = "hidden";
+        collect3.style.color = "black";
+        collect3.style.fontSize = "1.5rem";
     }
 }
 
