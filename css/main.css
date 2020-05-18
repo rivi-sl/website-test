@@ -15,9 +15,14 @@ Colors in the logo
     font-family: 'Bebas Neue', cursive;
 }
 
+body{
+    transition: background-color 1s; 
+}
+
 .r-header{
     padding: 30px 80px;
     transition: 0.5s; 
+    font-size: 120%;
 }
 
 .r-nav-brand{
@@ -39,7 +44,14 @@ Colors in the logo
     bottom: 22%;
     width: 30%;
     z-index: 200;
-    transition: 0.5s; 
+    transition: background-color 0.2s,
+                width 0.5s,
+                left 0.5s,
+                bottom 0.5s,
+                padding 0.5s,
+                border 0.5s,
+                border-radius 0.5s; 
+
 }
 
 .r-mimg0{
@@ -57,4 +69,93 @@ Colors in the logo
     left: 35%;
     font-size: 130%;
     transition: 0.2s; 
+}
+
+.r-section1{
+    padding-top: 100px;
+}
+
+.r-title0{
+    transition: 0.5s; 
+}
+
+.r-section1.card{
+    transition: 0.3s; 
+}
+
+.r-quote0{
+    font-size: 100%;
+    padding: 20px 100px;
+    transition: 0.5s; 
+}
+
+.r-quote0::before{
+    content: open-quote;
+    position: absolute;
+    font-size: 300%;
+    left: 6%;
+    top: 0;
+}
+
+.r-quote0::after{
+    content: close-quote;
+    position: absolute;
+    font-size: 200%;
+    text-align: right;
+    right: 6%;
+    bottom: 0;
+}
+
+.r-quote0-text{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 0.5s; 
+}
+
+.r-quote0-text span{
+    font-size: 200%;
+}
+
+/* Section 2 */
+.r-section2{
+    padding-top: 100px;
+}
+
+.r-icon2{
+    font-size: 2rem;
+    transition: 0.5s; 
+}
+
+.r-title2{
+    transition: 0.5s; 
+}
+
+.r-cardt2{
+    display: inline;
+}
+
+.r-card-2b-1, .r-card-2b-2, .r-card-2b-3{
+    margin-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Section 3 */
+.r-section3{
+    padding-top: 100px;
+}
+
+.r-se3-card{
+    border: 0px;
+}
+
+.r-se3-card div.card-body{
+    padding: 0px;
+}
+
+.r-se3-cardt{
+    font-size: 100%;
 }
