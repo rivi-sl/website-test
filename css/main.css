@@ -246,3 +246,79 @@ body {
 .r-se4-card-t {
     font-size: 100%;
 }
+
+/*chatbot*/
+.chat {
+    margin-top: 150px;
+    right: 1%;
+    bottom: 1%;
+    position: fixed;
+    width: 400px;
+    height: 75%;
+    border-radius: 10px;
+    box-shadow: -11px -1px 19px -1px rgba(0,0,0,0.59);
+    z-index: 200;
+    display: none;
+    background-color: crimson;
+}
+
+   
+.actions {
+    display: block;
+    margin: 5px;
+}
+.actions input{
+    height: 30px;
+    display: block;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+div.messages{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 83%;
+    box-shadow: inset 0px -4px 5px -1px rgba(0,0,0,0.75);
+}
+div.messages span {
+    max-width: 60%;
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.messages .bot {
+    text-align: left;
+    margin-right: auto;
+    background: #001f3f;
+    color: white;
+}
+.messages .self {
+    text-align: right;
+    margin-left: auto;
+    background: darkslategray;
+    color: white;
+}
+
+div.chaticon{
+    bottom: 2%;
+    right: 5%;
+    position: fixed;
+}
+div.chaticon button{
+    box-shadow: 0px -1px 13px 2px rgba(0,0,0,0.75);
+}
+div.chatclose{
+    text-align: right;
+    box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.75);
+}
+.chatclose button{
+    border-radius: 0;
+    border-top-right-radius: 10px;
+}
+

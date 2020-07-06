@@ -299,7 +299,25 @@
       </div>  
     </div>
   </section>
+
+
+  <div class="chat" id="bottoggle">
+    <div class="chatclose">
+      <button type="button" onclick="bottoggle()" class="btn btn-dark"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="messages"></div>
+    <div id="edge"></div>
+    <form class="actions">
+      <input type="text" placeholder= "press [Enter] to send…">
+    </form> 
   </div>
+
+ <div class="chaticon" >
+  <button type="button" onclick="bottoggle()" class="btn btn-danger  rounded" data-toggle="tooltip" data-placement="left" title="click to ask questions">
+    <i class="fas fa-qrcode fa-2x"></i>
+  </button>
+</div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -312,7 +330,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
-
+  <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
   <script src="./js/main.js"></script>
 
 </body>

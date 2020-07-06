@@ -152,3 +152,53 @@ var typed = new Typed('.typeWriter', {
     backSpeed: 30,
     backDelay: 3000,
 });
+
+//chatbot
+let bot = new RiveScript();
+
+const brains = [
+    './chatbot/brain.rive'
+ // another brain
+ ];
+ bot.loadFile(brains).then(botReady).catch(botNotReady);
+
+const message_container = document.querySelector('.messages');
+const form = document.querySelector('form');
+const input_box = document.querySelector('input');
+form.addEventListener('submit', (e) => {
+ e.preventDefault();
+ selfReply(input_box.value);
+ input_box.value = '';
+});
+function botReply(message){
+ message_container.innerHTML += `<span class="bot">${message}</span>`;
+ location.href = '#edge';
+}
+function selfReply(message){
+ message_container.innerHTML += `<span class="self">${message}</span>`;
+ location.href = '#edge';
+ 
+ bot.reply("local-user", message).then(function(reply) {
+ botReply(reply);
+ });
+}
+function botReady(){
+ bot.sortReplies();
+ botReply('Hello, can I help you?');
+}
+function botNotReady(err){
+ console.log("An error has occurred.", err);
+}
+//chat bot tooltip
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+//chatbot toggle
+function bottoggle() {
+    var x = document.getElementById("bottoggle");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
